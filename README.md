@@ -4,19 +4,19 @@ A CLI wrapper for the Zendesk Support API. Built with [Laravel Zero](https://lar
 
 Download the `zd` Phar file using `wget` or `curl`:
 
-curl -O https://raw.githubusercontent.com/andrewfleming/zd-cli/main/builds/zd
+curl -O https://raw.githubusercontent.com/andrewfleming/zd-cli/main/builds/zd-cli.phar
 
 Next, check the Phar file to verify that it’s working:
 
 ```bash
-php zd --version
+php zd-cli
 ```
 
 To use ZD-CLI from the command line by typing `zd`, make the file executable and move it to somewhere in your `PATH`. For example:
 
 ```bash
-chmod +x zd
-sudo mv zd /usr/local/bin
+chmod +x zd-cli.phar
+sudo mv zd-cli.phar /usr/local/bin/zd
 ```
 
 
