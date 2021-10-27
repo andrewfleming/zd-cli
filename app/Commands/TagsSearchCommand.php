@@ -16,8 +16,7 @@ class TagsSearchCommand extends ZendeskBaseCommand {
      *
      * @var string
      */
-    protected $description = 'Returns an array of registered and recent tag names that start with the characters
-                              specified in the name query parameter. You must specify at least 2 characters.';
+    protected $description = 'Returns an array of registered and recent tag names that start with the characters specified in the name query parameter.';
 
     /**
      * Execute the console command.

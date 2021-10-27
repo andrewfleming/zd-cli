@@ -56,5 +56,5 @@ Clone this repo to your local machine. Change into the zd-cli directory and run 
 run using the following pattern.
 
 ```
-$php zd-cli {COMMAND}
+$ php zd-cli {COMMAND}
 ```

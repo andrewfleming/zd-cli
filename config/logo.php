@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'enabled' => false,
+    'enabled' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -26,8 +26,7 @@ return [
     |
     */
 
-    'font' => \LaravelZero\Framework\Components\Logo\FigletString::DEFAULT_FONT,
-
+    'font' => resource_path('fonts/larry3d.flf'),
     /*
     |--------------------------------------------------------------------------
     | Output Width

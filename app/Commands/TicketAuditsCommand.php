@@ -16,7 +16,7 @@ class TicketAuditsCommand extends ZendeskBaseCommand {
      *
      * @var string
      */
-    protected $description = 'Each audit represents a single update to the ticket. An update can consist of one or more events. https://developer.zendesk.com/rest_api/docs/support/ticket_audits';
+    protected $description = 'Each audit represents a single update to the ticket. An update can consist of one or more events.';
 
     /**
      * Execute the console command.
