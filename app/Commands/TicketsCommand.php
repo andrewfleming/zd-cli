@@ -2,8 +2,6 @@
 
 namespace App\Commands;
 
-use LaravelZero\Framework\Commands\Command;
-
 class TicketsCommand extends ZendeskBaseCommand {
     /**
      * The signature of the command.
