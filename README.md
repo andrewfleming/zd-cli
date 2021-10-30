@@ -4,7 +4,9 @@ A CLI wrapper for the Zendesk Support API. Built with [Laravel Zero](https://lar
 
 Download the `zd` Phar file using `wget` or `curl`:
 
+```
 curl -O https://raw.githubusercontent.com/andrewfleming/zd-cli/main/builds/zd-cli.phar
+```
 
 Next, check the Phar file to verify that it’s working:
 

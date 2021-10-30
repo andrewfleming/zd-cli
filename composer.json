@@ -2,7 +2,7 @@
     "name": "andrewfleming/zd-cli",
     "description": "A CLI wrapper around the Zendesk Support API.",
     "keywords": ["zendesk", "console", "cli"],
-    "homepage": "https://laravel-zero.com",
+    "homepage": "https://ajfleming.info",
     "type": "project",
     "license": "MIT",
     "support": {
@@ -46,5 +46,5 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "bin": ["builds/zd"]
+    "bin": ["builds/zd-cli.phar"]
 }

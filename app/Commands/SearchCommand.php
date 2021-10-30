@@ -17,7 +17,7 @@ class SearchCommand extends ZendeskBaseCommand {
                             {query-string : The query to search for. Result is returned as JSON.}
                             {--sort-by= : One of updated_at, created_at, priority, status, or ticket_type. Defaults to sorting by relevance}
                             {--sort-order= : One of asc or desc. Defaults to desc}
-                            {--all : Return all pages of search results up to the 10 pages (1000 results)}';
+                            {--max : Return the maximum number of search results of 10 pages or 1000 results}';
     /**
      * The description of the command.
      *
@@ -46,17 +46,17 @@ class SearchCommand extends ZendeskBaseCommand {
             } catch ( RouteException | MissingParametersException | ApiResponseException $exception ) {
                 $this->error( $exception->getMessage() );
 
-                return Command::FAILURE;
+                return $this::FAILURE;
             }
 
             $results = array_merge( $results, $request->results );
             $query_params['page'] ++;
-        } while ( $request->next_page && $this->option( 'all' ) && $query_params['page'] < 11 );
+        } while ( $request->next_page && $this->option( 'max' ) && $query_params['page'] < 11 );
 
         $request->results = $results;
         $this->line( json_encode( $request, JSON_PRETTY_PRINT ) );
 
-        return Command::SUCCESS;
+        return $this::SUCCESS;
     }
 
 }
