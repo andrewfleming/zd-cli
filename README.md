@@ -11,7 +11,7 @@ curl -O https://raw.githubusercontent.com/andrewfleming/zd-cli/main/builds/zd-cl
 Next, check the Phar file to verify that it’s working:
 
 ```bash
-php zd-cli
+php zd-cli.phar
 ```
 
 To use ZD-CLI from the command line by typing `zd`, make the file executable and move it to somewhere in your `PATH`. For example:
